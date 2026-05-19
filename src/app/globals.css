@@ -189,7 +189,12 @@
   /* —— Logos band —— */
   .trust{padding:64px 0;border-bottom:1px solid var(--rule-paper)}
   .trust .lbl{text-align:center;color:var(--muted);font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:32px}
-  .trust .logos{display:grid;grid-template-columns:repeat(6,1fr);gap:24px;align-items:center}
+  .trust .logos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+    gap:24px;
+    align-items:center;
+  }
   .logo-stub{
     height:40px;display:flex;align-items:center;justify-content:center;
     color:var(--ink);opacity:.55;
