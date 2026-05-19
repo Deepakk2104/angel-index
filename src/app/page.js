@@ -16,8 +16,10 @@ export default function Home() {
   return (
     <>
       <Ticker />
+      <div className="wrap">
       <Navbar />
       <Hero />
+      </div>
       <Trust />
       <Features />
       <Workflow />
