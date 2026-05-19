@@ -28,42 +28,42 @@ export default function Footer() {
           <div className="col">
             <h5>Product</h5>
             <ul>
-              <li>Database</li>
-              <li>Match scoring</li>
-              <li>Signals</li>
-              <li>Workspace</li>
-              <li>API</li>
-              <li>Changelog</li>
+              <li><a href="#">Database</a></li>
+              <li><a href="#">Match scoring</a></li>
+              <li><a href="#">Signals</a></li>
+              <li><a href="#">Workspace</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="#">Changelog</a></li>
             </ul>
           </div>
           <div className="col">
             <h5>Solutions</h5>
             <ul>
-              <li>For founders</li>
-              <li>For VCs</li>
-              <li>For accelerators</li>
-              <li>For DFIs</li>
-              <li>For corporates</li>
+              <li><a href="#">For founders</a></li>
+              <li><a href="#">For VCs</a></li>
+              <li><a href="#">For accelerators</a></li>
+              <li><a href="#">For DFIs</a></li>
+              <li><a href="#">For corporates</a></li>
             </ul>
           </div>
           <div className="col">
             <h5>Resources</h5>
             <ul>
-              <li>Insights</li>
-              <li>Africa Seed Index</li>
-              <li>Customer stories</li>
-              <li>Coverage report</li>
-              <li>Glossary</li>
+              <li><a href="#">Insights</a></li>
+              <li><a href="#">Africa Seed Index</a></li>
+              <li><a href="#">Customer stories</a></li>
+              <li><a href="#">Coverage report</a></li>
+              <li><a href="#">Glossary</a></li>
             </ul>
           </div>
           <div className="col">
             <h5>Company</h5>
             <ul>
-              <li>About</li>
-              <li>Careers · 12</li>
-              <li>Press</li>
-              <li>Security</li>
-              <li>Contact</li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers · 12</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Security</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
           </div>
         </div>

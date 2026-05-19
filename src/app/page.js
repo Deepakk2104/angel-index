@@ -11,23 +11,40 @@ import Pricing from "./components/Pricing";
 import FAQ from "./components/FAQ";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
+import Reveal from "./components/Reveal";
 
 export default function Home() {
   return (
     <>
       <Ticker />
       <div className="wrap">
-      <Navbar />
-      <Hero />
+        <Navbar />
+        <Hero />
       </div>
-      <Trust />
-      <Features />
-      <Workflow />
-      <Quote />
-      <Coverage />
-      <Pricing />
-      <FAQ />
-      <CTA />
+      <Reveal>
+        <Trust />
+      </Reveal>
+      <Reveal delay={80}>
+        <Features />
+      </Reveal>
+      <Reveal delay={80}>
+        <Workflow />
+      </Reveal>
+      <Reveal>
+        <Quote />
+      </Reveal>
+      <Reveal delay={80}>
+        <Coverage />
+      </Reveal>
+      <Reveal delay={80}>
+        <Pricing />
+      </Reveal>
+      <Reveal>
+        <FAQ />
+      </Reveal>
+      <Reveal>
+        <CTA />
+      </Reveal>
       <Footer />
     </>
   );

@@ -142,6 +142,7 @@ export default function Hero() {
               <span className="chip">+ Lead status</span>
               <span className="chip">+ Last active</span>
             </div>
+            <div className="term-table-wrap">
             <table className="invs">
               <thead>
                 <tr>
@@ -247,6 +248,7 @@ export default function Hero() {
                 </tr>
               </tbody>
             </table>
+            </div>
           </div>
 
           {/* right pulse */}
