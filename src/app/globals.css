@@ -72,7 +72,16 @@
   .brand .dot{width:6px;height:6px;background:var(--amber);border-radius:50%;display:inline-block;transform:translateY(-3px);margin:0 4px;transition:transform var(--dur) var(--ease)}
   .brand:hover .dot{transform:translateY(-3px) scale(1.25)}
   .brand .index{font-family:var(--serif);font-style:italic;font-weight:400;font-size:1.05em}
-  nav.top ul{display:flex;gap:32px;list-style:none;padding:0;margin:0;font-size:14px}
+  nav.top ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:32px;
+    list-style:none;
+    padding:0;
+    margin:0 auto;
+    font-size:14px;
+  }
   nav.top ul li a{
     color:var(--ink);position:relative;padding:4px 0;
     transition:color var(--dur) var(--ease);
@@ -291,22 +300,75 @@
   }
   .feat .num{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin-bottom:18px;display:flex;justify-content:space-between}
 
-  /* —— Workflow strip —— */
-  .flow{
-    background:var(--ink);color:var(--ivory);border-radius:4px;
-    padding:48px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;
-  }
-  .flow .step{padding-right:32px;border-right:1px solid var(--rule);position:relative}
-  .flow .step:last-child{border-right:none;padding-right:0}
-  .flow .step .n{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;color:var(--amber);text-transform:uppercase;margin-bottom:18px}
-  .flow .step h4{font-family:var(--sans);font-weight:500;font-size:24px;letter-spacing:-.02em;margin:0 0 10px}
-  .flow .step p{font-size:14px;line-height:1.5;color:rgba(244,239,230,.72);margin:0}
-  .flow .step{
-    transition:transform var(--dur) var(--ease);
-  }
-  .flow .step:hover{transform:translateY(-4px)}
-  .flow .step .arrow{position:absolute;top:0;right:-7px;width:14px;height:14px;background:var(--ink);color:var(--amber);font-family:var(--mono);font-size:14px;display:flex;align-items:center;justify-content:center}
+ /* —— Workflow strip —— */
+.flow{
+  background:var(--ink);
+  color:var(--ivory);
+  border-radius:4px;
+  padding:48px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:0;
+}
 
+.flow .step{
+  padding:0 24px;
+  border-right:1px solid var(--rule);
+  position:relative;
+  transition:transform var(--dur) var(--ease);
+}
+
+.flow .step:first-child{
+  padding-left:0;
+}
+
+.flow .step:last-child{
+  border-right:none;
+  padding-right:0;
+}
+
+.flow .step:hover{
+  transform:translateY(-4px);
+}
+
+.flow .step .n{
+  font-family:var(--mono);
+  font-size:10.5px;
+  letter-spacing:.12em;
+  color:var(--amber);
+  text-transform:uppercase;
+  margin-bottom:18px;
+}
+
+.flow .step h4{
+  font-family:var(--sans);
+  font-weight:500;
+  font-size:24px;
+  letter-spacing:-.02em;
+  margin:0 0 10px;
+}
+
+.flow .step p{
+  font-size:14px;
+  line-height:1.5;
+  color:rgba(244,239,230,.72);
+  margin:0;
+}
+
+.flow .step .arrow{
+  position:absolute;
+  top:0;
+  right:-7px;
+  width:14px;
+  height:14px;
+  background:var(--ink);
+  color:var(--amber);
+  font-family:var(--mono);
+  font-size:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
   /* —— Quote —— */
   .quote-band{padding:96px 0;background:var(--ivory-2)}
   .quote-band .q{
@@ -543,6 +605,7 @@
 
   nav.top ul {
     flex-direction: column;
+    align-items: flex-start;
     gap: 4px;
     width: 100%;
     padding-bottom: 16px;
