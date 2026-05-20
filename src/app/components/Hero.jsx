@@ -1,3 +1,6 @@
+'use client';
+import CountUp from "./CountUp";
+
 export default function Hero() {
   return (
     <section className="hero">
@@ -23,43 +26,68 @@ export default function Hero() {
         <a className="btn amber" href="#">
           Start free for 14 days <span className="arr">→</span>
         </a>
-        <a className="btn ghost" href="#" style={{ border: '1px solid var(--ink)' }}>
+        <a className="btn hero-outline" href="#">
           Book a coverage demo
         </a>
         <span className="note">No card · 50 free profile views</span>
       </div>
 
       {/* meta strip */}
-      <div className="hero-meta">
-        <div className="cell">
-          <div className="k">Verified profiles</div>
-          <div className="v">
-            38,910 <small>↑ 1.8%</small>
-          </div>
-          <div className="note">Updated weekly · 95% accuracy SLA</div>
-        </div>
-        <div className="cell">
-          <div className="k">Active investors L30D</div>
-          <div className="v">
-            12,408 <small>↑ 4.2%</small>
-          </div>
-          <div className="note">Touched a deal in last 30 days</div>
-        </div>
-        <div className="cell">
-          <div className="k">Cities covered</div>
-          <div className="v">
-            18 <small>+ 4 Q3</small>
-          </div>
-          <div className="note">Sub-Saharan Africa, MENA, S/SE Asia</div>
-        </div>
-        <div className="cell">
-          <div className="k">Avg. response time</div>
-          <div className="v">
-            3.4d <small>↓ 38%</small>
-          </div>
-          <div className="note">Founder → first investor reply</div>
-        </div>
-      </div>
+       <div className="hero-meta">
+
+       <div className="cell">
+  <div className="k">Verified profiles</div>
+
+  <div className="v">
+    <CountUp end={38910} />
+    <small>↑ 1.8%</small>
+  </div>
+
+  <div className="note">
+    Updated weekly · 95% accuracy SLA
+  </div>
+</div>
+
+<div className="cell">
+  <div className="k">Active investors L30D</div>
+
+  <div className="v">
+    <CountUp end={12408} />
+    <small>↑ 4.2%</small>
+  </div>
+
+  <div className="note">
+    Touched a deal in last 30 days
+  </div>
+</div>
+
+<div className="cell">
+  <div className="k">Cities covered</div>
+
+  <div className="v">
+    <CountUp end={18} />
+    <small>+ 4 Q3</small>
+  </div>
+
+  <div className="note">
+    Sub-Saharan Africa, MENA, S/SE Asia
+  </div>
+</div>
+
+<div className="cell">
+  <div className="k">Avg. response time</div>
+
+  <div className="v">
+    <CountUp end={3.4} decimals={1} suffix="d" />
+    <small>↓ 38%</small>
+  </div>
+
+  <div className="note">
+    Founder → first investor reply
+  </div>
+</div>
+
+       </div>
 
       {/* TERMINAL MOCK */}
       <div className="terminal">

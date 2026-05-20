@@ -34,14 +34,7 @@ export default function CTA() {
             <a className="btn amber" href="#">
               Start free <span className="arr">→</span>
             </a>
-            <a
-              className="btn ghost"
-              href="#"
-              style={{
-                border: "1px solid rgba(244,239,230,.4)",
-                color: "var(--ivory)",
-              }}
-            >
+            <a className="btn cta-outline" href="#">
               Book a demo
             </a>
           </div>
