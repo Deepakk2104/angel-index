@@ -1,7 +1,7 @@
 export default function Pricing() {
   return (
     <div className="wrap">
-      <section className="s">
+      <section className="s" id="pricing">
         <div className="s-head">
           <div className="s-num">
             04 / Pricing<b>Plans</b>

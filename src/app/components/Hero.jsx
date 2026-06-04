@@ -3,7 +3,7 @@ import CountUp from "./CountUp";
 
 export default function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div className="eyebrow">
         <span className="pill">
           <span className="dot" /> Series A · led by Norrsken22 · May 2026
@@ -90,7 +90,7 @@ export default function Hero() {
        </div>
 
       {/* TERMINAL MOCK */}
-      <div className="terminal">
+      <div className="terminal" id="insight">
         <div className="term-bar">
           <div className="lights">
             <span />

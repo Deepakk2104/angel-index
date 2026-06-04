@@ -1,7 +1,7 @@
 export default function Coverage() {
   return (
     <div className="wrap">
-      <section className="s">
+      <section className="s" id="coverage">
         <div className="s-head">
           <div className="s-num">
             03 / Coverage<b>Where we index</b>

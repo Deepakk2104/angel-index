@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <nav className={`top${open ? ' is-open' : ''}`}>
       <div className="nav-bar">
-        <a className="brand" href="#" onClick={() => setOpen(false)}>
+        <a className="brand" href="#hero" onClick={() => setOpen(false)}>
           Angel<span className="dot" />
           <span className="index">Index</span>
         </a>
@@ -43,27 +43,27 @@ export default function Navbar() {
       <div id="nav-menu" className="nav-menu">
         <ul>
           <li className="has-caret">
-            <a href="#" onClick={() => setOpen(false)}>
+            <a href="#products" onClick={() => setOpen(false)}>
               Product
             </a>
           </li>
           <li className="has-caret">
-            <a href="#" onClick={() => setOpen(false)}>
+            <a href="#solution" onClick={() => setOpen(false)}>
               Solutions
             </a>
           </li>
           <li>
-            <a href="#" onClick={() => setOpen(false)}>
+            <a href="#coverage" onClick={() => setOpen(false)}>
               Coverage
             </a>
           </li>
           <li>
-            <a href="#" onClick={() => setOpen(false)}>
+            <a href="#pricing" onClick={() => setOpen(false)}>
               Pricing
             </a>
           </li>
           <li>
-            <a href="#" onClick={() => setOpen(false)}>
+            <a href="#insight" onClick={() => setOpen(false)}>
               Insights
             </a>
           </li>

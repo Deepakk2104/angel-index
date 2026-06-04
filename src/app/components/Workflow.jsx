@@ -1,7 +1,7 @@
 export default function Workflow() {
   return (
     <div className="wrap">
-      <section className="s">
+      <section className="s" id="solution">
         <div className="s-head">
           <div className="s-num">
             02 / Workflow<b>From query to cheque</b>

@@ -1,7 +1,7 @@
 export default function Features() {
   return (
     <div className="wrap">
-      <section className="s">
+      <section id="products" className="s">
         <div className="s-head">
           <div className="s-num">
             01 / Product<b>What you get</b>
