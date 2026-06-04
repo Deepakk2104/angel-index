@@ -67,11 +67,7 @@ export default function Navbar() {
               Insights
             </a>
           </li>
-          <li>
-            <a href="#" onClick={() => setOpen(false)}>
-              Customers
-            </a>
-          </li>
+          
         </ul>
         <div className="nav-actions">
           <a className="btn ghost" href="#" onClick={() => setOpen(false)}>
