@@ -12,6 +12,7 @@ import FAQ from "./components/FAQ";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
 import Reveal from "./components/Reveal";
+import Scroll from './components/Scroll';
 
 export default function Home() {
   return (
@@ -46,6 +47,7 @@ export default function Home() {
         <CTA />
       </Reveal>
       <Footer />
+      <Scroll />
     </>
   );
 }

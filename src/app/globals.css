@@ -1348,3 +1348,59 @@ nav.top ul li.has-caret a::after{
     font-size: 112px;
   }
 }
+.scroll-top {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+
+  width: 48px;
+  height: 48px;
+
+  border: 1px solid var(--ink);
+  background: var(--ivory);
+
+  color: var(--ink);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+  font-family: var(--sans);
+
+  border-radius: 2px;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(12px);
+
+  transition:
+    opacity var(--dur) var(--ease),
+    transform var(--dur) var(--ease),
+    background var(--dur) var(--ease),
+    border-color var(--dur) var(--ease);
+
+  z-index: 999;
+}
+
+.scroll-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-top:hover {
+  background: var(--amber);
+  border-color: var(--amber);
+}
+
+@media (max-width: 768px) {
+  .scroll-top {
+    right: 16px;
+    bottom: 16px;
+
+    width: 42px;
+    height: 42px;
+  }
+}
