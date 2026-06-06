@@ -11,11 +11,11 @@ export default function Hero() {
         <span className="mono muted">v 4.2 · Coverage now in 18 cities</span>
       </div>
       <h1>
-        The investor index
+        Find the right investors
         <br />
-        for <em>emerging</em> markets.
+        with a <em>verified</em>
         <br />
-        <span className="accent">Capital</span>, <em>indexed</em>.
+        <span className="accent">investor</span>, <em>database</em>.
       </h1>
       <p className="sub">
         Angel Index is the verified investor intelligence layer for founders and fund managers
